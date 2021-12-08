@@ -1,0 +1,4 @@
+
+aiohttp==3.8.1
+aiogram==2.16
+emoji
