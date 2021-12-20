@@ -30,7 +30,7 @@ class BotDB:
 
     async def all_users(self, message):
         for ret in self.cursor.execute("SELECT * FROM 'users'").fetchall():
-            await bot.send_message(message.from_user.id, f"Количество пользователей: {ret[0]}\njoin_date {ret[-1]}")
+            await bot.send_message(message.from_user.id, f"Количество пользователей: {ret}")
         return self.conn.commit()
 
     def close(self):
