@@ -2,7 +2,7 @@ import sqlite3
 
 from aiogram import Bot
 
-TOKEN = "2127054709:AAG5hSIhf2q4zMrDo_KKluWaas9WaHJhf6c"
+TOKEN = "2130598875:AAFO9ZLU8_crI5caGkfDX5xjH9VSXX1rCTo"
 
 bot = Bot(token=TOKEN, parse_mode="HTML")
 
@@ -31,7 +31,7 @@ class BotDB:
     async def all_users(self, message):
         for ret in self.cursor.execute("SELECT * FROM 'users'").fetchall():
             await bot.send_message(message.from_user.id, f"Количество пользователей: {ret[0]}\njoin_date {ret[-1]}")
-
+        return self.conn.commit()
 
     def close(self):
         """Закрываем соединение с БД"""

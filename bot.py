@@ -9,7 +9,7 @@ from db import BotDB
 
 admin_id = 2020285924
 BotDB = BotDB('users.db')
-TOKEN = "2127054709:AAG5hSIhf2q4zMrDo_KKluWaas9WaHJhf6c"
+TOKEN = "2130598875:AAFO9ZLU8_crI5caGkfDX5xjH9VSXX1rCTo"
 CHANNEL_ID = "@dunyonews_ru"
 CHANNEL_ID_UZ = "@uzdunyonews"
 NOTSUB_MESSAGE = "Для доступа к функионалу бота, подпишитесь на канал"
